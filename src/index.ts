@@ -24,6 +24,7 @@ rl.question('please input the link to the YouTube video you wish to download: ',
             liteFormats.sort((a, b) => a.itag < b.itag ? -1 : a.itag > b.itag ? 1 : 0);
             console.table(liteFormats);
             rl.question('please input the desired format itag: ', (itag) => {
+                console.log("Downloading...");
                 resolve(ytdl(url, {quality:itag})
                 .pipe(fs.createWriteStream("output/[" + Math.floor(Date.now() / 1000 % 1000000) + "] " + title + ".mp4"))
                 .on('finish', () => {
