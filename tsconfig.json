@@ -1,0 +1,28 @@
+{
+    "compilerOptions" : {
+        "module":"commonjs",
+        "moduleResolution":"node",
+        "target":"ES2018",
+        "lib":[
+            "ES6",
+            "DOM"
+        ],
+        "sourceMap":true,
+        "types":[
+            "node"
+        ],
+        "typeRoots":[
+            "node_modules/@types"
+        ],
+        "experimentalDecorators":true,
+        "emitDecoratorMetadata":true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule":true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+    },
+    "exclude":[
+        "node_modules"
+    ]
+}
