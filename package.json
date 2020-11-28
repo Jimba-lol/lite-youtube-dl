@@ -4,6 +4,7 @@
   "description": "An extremely simple application for downloading YouTube videos",
   "main": "index.js",
   "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
     "prompt": "^1.0.0",
     "typescript": "^4.1.2",
     "ytdl-core": "^4.0.6"
